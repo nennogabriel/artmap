@@ -3,7 +3,7 @@ import 'leaflet/dist/leaflet.css';
 import mapIcon from '../utils/mapIcon';
 
 const Map = ({ apiKey, ...rest }) => {
-  const position = [-20.659998, -40.5047085];
+  const position = [37.54379, 127.023067];
   return (
     <div {...rest}>
       <MapContainer
