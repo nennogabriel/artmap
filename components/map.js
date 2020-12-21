@@ -5,9 +5,9 @@ const Map = ({ apiKey, ...rest }) => {
   return (
     <div {...rest}>
       <MapContainer
-        center={[51.505, -0.09]}
-        zoom={15}
-        scrollWheelZoom={false}
+        center={[37.5650172, 126.8494659]}
+        zoom={13}
+        scrollWheelZoom={true}
         className="h-screen w-screen -m-12"
       >
         <TileLayer
