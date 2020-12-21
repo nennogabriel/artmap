@@ -1,9 +1,9 @@
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
-const Map = (props) => {
+const Map = ({ apiKey, ...rest }) => {
   return (
-    <div {...props}>
+    <div {...rest}>
       <MapContainer
         center={[51.505, -0.09]}
         zoom={15}
@@ -11,7 +11,7 @@ const Map = (props) => {
         className="h-screen w-screen -m-12"
       >
         <TileLayer
-          url={`https://api.mapbox.com/styles/v1/nennogabriel/ckixugzdw1yx819odgzvhmhd7/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
+          url={`https://api.mapbox.com/styles/v1/nennogabriel/ckixugzdw1yx819odgzvhmhd7/tiles/256/{z}/{x}/{y}@2x?access_token=${apiKey}`}
         />
         {/* <Marker position={[51.505, -0.09]}>
           <Popup>
