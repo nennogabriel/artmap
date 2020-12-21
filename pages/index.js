@@ -21,7 +21,7 @@ export default function Home() {
               <div className="bg-gradient-to-t from-white to-transparent text-3xl p-4">
                 top message
               </div>
-              <div className="bg-white flex-auto text-green text-6xl p-4">
+              <div className="bg-white flex-auto text-green text-6xl p-4 text-red-800">
                 mid message
               </div>
               <div className="bg-white text-2xl p-4">bottom message</div>
