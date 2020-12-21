@@ -14,7 +14,7 @@ export default function Home() {
         <div className="border-8 border-black w-full h-full p-8">
           <div className="w-full h-full overflow-hidden relative">
             <Map
-              apiKey={process.env.REACT_APP_MAPBOX_TOKEN}
+              apiKey="pk.eyJ1IjoibmVubm9nYWJyaWVsIiwiYSI6ImNrZzZ0MzFmczAwbXIycm81ZDQyYzJvbTYifQ.hcHlx_YQxYmmYLV3rjNWnA"
               className="absolute inset-0 z-0 "
             />
             <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col text-center">
